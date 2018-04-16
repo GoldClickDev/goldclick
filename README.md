@@ -9,7 +9,7 @@ repositories {
 }}
      
 2. Proguard-rules  
--keeppackagenames org.jsoup.nodes
+-keeppackagenames org.jsoup.nodes  
 -keep class com.goldclick.ad.**{*;}
 
 3. Initialization setting  
