@@ -47,8 +47,5 @@ configurations.all {
 resolutionStrategy.eachDependency { DependencyResolveDetails details ->  
 def requested = details.requested  
 if (requested.getGroup().equals("com.android.support") && !requested.getName().contains('multidex')) {
-                details.useVersion 'the current version of android support  like 27.0.2'  
-                }  
-          }  
-      }  
+                details.useVersion 'the current version of android support  like 27.0.2'  }  }  }  
  }
