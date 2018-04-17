@@ -2,7 +2,7 @@
 Lightweight and fast with small size, higher fill rates, Goldclick SDK is a good monetization increasing tool for developers and your traffic.
 
 1. SDK Import  minSdkVersion>=16  
-implementation 'com.goldclick.ad:adsdk:1.0.1'  
+implementation 'com.goldclick.ad:adsdk:1.0.2'  
 allprojects {  
 repositories {  
   jcenter{url "https://dl.bintray.com/goldclickdev/maven"}  
