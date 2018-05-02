@@ -2,15 +2,17 @@
 Lightweight and fast with small size, higher fill rates, Goldclick SDK is a good monetization increasing tool for developers and your traffic.
 
 1. SDK Import  minSdkVersion>=16  
-implementation 'com.goldclick.ad:adsdk:1.0.2'  
+implementation 'com.goldclick.adcore:adcore:1.0.16'
 allprojects {  
 repositories {  
-  jcenter{url "https://dl.bintray.com/goldclickdev/maven"}  
+   jcenter { url "https://dl.bintray.com/goldclickdev/maven" }
 }}
      
 2. Proguard-rules  
--keeppackagenames org.jsoup.nodes  
--keep class com.goldclick.ad.**{*;}
+-keep class com.goldclick.core.model.**{*;}
+-keep class com.facebook.ads.**{*;}
+-keep class com.google.android.gms.ads.**{*;}
+-keep class android.support.v4.util.ArrayMap{*;}
 
 3. Initialization setting  
 Add the following code to submenu ”onCreate”of “Application”  
@@ -18,7 +20,7 @@ GoldClickAd.init(Context context,String appId);
 
 4. Banner ADs integration  
 4.1 Add the following code to XML  
-<com.goldclick.ad.core.GCAdBanner  
+<com.goldclick.core.core.GCAdBanner  
      android:id="@+id/gcAdBanner"  
      android:layout_width="match_parent"  
      android:layout_height="wrap_content"/>
