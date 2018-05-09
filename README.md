@@ -10,9 +10,12 @@ repositories {
 }}
      
 2. Proguard-rules  
--keep class com.goldclick.core.model.**{*;}
--keep class com.facebook.ads.**{*;}
+-keep class com.goldclick.**{*;}
+
+-keep class com.facebook.ads.**.{*;}
+
 -keep class com.google.android.gms.ads.**{*;}
+
 -keep class android.support.v4.util.ArrayMap{*;}
 
 3. Initialization setting  
