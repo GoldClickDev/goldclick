@@ -2,7 +2,7 @@
 Lightweight and fast with small size, higher fill rates, Goldclick SDK is a good monetization increasing tool for developers and your traffic.
 
 1. SDK Import  minSdkVersion>=16  
-implementation 'com.goldclick.adcore:adcore:1.0.16'  
+implementation 'com.goldclick.adcore:adcore:1.0.19'  
 
 allprojects {  
 repositories {  
@@ -12,11 +12,18 @@ repositories {
 2. Proguard-rules  
 -keep class com.goldclick.**{*;}
 
--keep class com.facebook.ads.**.{*;}
+
+-keep class com.facebook.ads.**{*;}
+
 
 -keep class com.google.android.gms.ads.**{*;}
 
+
 -keep class android.support.v4.util.ArrayMap{*;}
+
+
+-keep class android.support.v4.util.SimpleArrayMap{*;}
+
 
 3. Initialization setting  
 Add the following code to submenu ”onCreate”of “Application”  
